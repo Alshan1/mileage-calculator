@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>~Fuel cal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <h1>Vehicle Mileage Calculator</h1>
+            <div class="input-group">
+                <input type="number" placeholder="Total Distance Driven (km)"id="distanceDriven">
+                <input type="number" placeholder="Petrol Price per Litre" id="petrolPrice">
+                <input type="number" placeholder="Total Amount Spent" id="amountSpent">
+                <button onclick="calculateMileage()">Calculate Mileage</button>
+            </div>
+            <div class="result" id="mileageResult">Mileage: 0.00 km/litre</div>
+        </div>
+        <div class="calculator">
+            <h1>Vehicle Fuel Calculator</h1>
+            <div class="input-group">
+                <input type="number" placeholder="Total Distance Driven (km)" id="distanceDriven2">
+                <input type="number" placeholder="Average Fuel Price/litre" id="fuelPrice">
+                <input type="number" placeholder="Average Mileage" id="averageMileage">
+                <button onclick="calculateSpentPrice()">Calculate Spent Price</button>
+            </div>
+            <div class="result" id="priceResult">Price: ₹0</div>
+        </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
